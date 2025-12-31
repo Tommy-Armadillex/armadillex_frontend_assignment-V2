@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  // Prevent font-weight from being transitioned (causes jarring visual effects)
+  // Explicitly list transition properties, excluding font-weight
+  transition-property:
+    background-color, border-color, border-width, color, fill, stroke, opacity,
+    box-shadow, transform, width, height, padding, margin, max-width,
+    max-height, min-width, min-height, gap, scale, translate, rotate, filter,
+    backdrop-filter !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $primary;
+  // font-family: 'almoni', 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $accent-light;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $border;
+  border-radius: 1rem;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $secondary-dark;
+}

@@ -1,0 +1,123 @@
+@keyframes open-right {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+
+@keyframes open-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes side-to-side {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-grow {
+  0% {
+    transform: scale(1); /* Start at normal size */
+  }
+  50% {
+    transform: scale(1.1); /* Grow to 110% of the size */
+  }
+  100% {
+    transform: scale(1); /* Return to normal size */
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1); /* Grow to 110% of the size */
+    /* Start at normal size */
+  }
+  50% {
+    transform: scale(1.5); /* Grow to 110% of the size */
+  }
+  100% {
+    transform: scale(1); /* Return to normal size */
+  }
+}
+
+// Transitions
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+// Circular orbit animation using CSS Motion Path
+@keyframes orbit-motion {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+// Vue Transition Classes
+
+.slide-down-enter-active,
+.slide-down-leave-active {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.slide-down-enter-from {
+  opacity: 0;
+  transform: translateY(-10px);
+  max-height: 0;
+}
+
+.slide-down-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+  max-height: 0;
+}
+
+// Animation classes - kept in component due to transform conflict with .floating-toolbar
+.slide-up-enter-active {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.slide-up-leave-active {
+  transition: all 0.3s ease;
+}
+
+.slide-up-enter-from {
+  opacity: 0;
+  transform: translateX(-50%) translateY(20px);
+}
+
+.slide-up-leave-to {
+  opacity: 0;
+  transform: translateX(-50%) translateY(20px);
+}

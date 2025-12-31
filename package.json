@@ -1,0 +1,51 @@
+{
+  "name": "ai-governance-frontend-platform",
+  "version": "1.1",
+  "description": "Employee Access to AI Governance Platform",
+  "productName": "AI Governance Frontend Platform",
+  "author": "Tommy <tommy@armadillex.com>",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint -c ./eslint.config.js \"./src/**/*.{js,cjs,mjs,vue}\"",
+    "lint:fix": "npm run format && eslint -c ./eslint.config.js \"./src/**/*.{js,cjs,mjs,vue}\" --fix ",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build"
+  },
+  "dependencies": {
+    "@auth0/auth0-vue": "^2.4.0",
+    "@quasar/extras": "^1.16.4",
+    "@tanstack/vue-query": "^5.67.3",
+    "@tanstack/vue-query-devtools": "^5.67.3",
+    "@vueuse/core": "^13.0.0",
+    "@vueuse/head": "^2.0.0",
+    "axios": "^1.2.1",
+    "date-fns": "^4.1.0",
+    "lucide-vue-next": "^0.553.0",
+    "pinia": "^3.0.1",
+    "qs": "^6.14.0",
+    "quasar": "^2.18.2",
+    "query-string": "^9.3.1",
+    "vue": "^3.4.18",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@quasar/app-vite": "^2.1.0",
+    "@vue/compiler-sfc": "^3.4.18",
+    "@vue/eslint-config-prettier": "^10.1.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^9.14.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "globals": "^15.12.0",
+    "postcss": "^8.4.14",
+    "prettier": "^3.3.3"
+  },
+  "engines": {
+    "node": "^28 || ^26 || ^24 || ^22 || ^20 || ^18",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

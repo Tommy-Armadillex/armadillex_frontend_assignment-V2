@@ -1,0 +1,49 @@
+// /* TEXT COLORS */
+$ax-colors: (
+  'primary-dark': $primary-dark,
+  'primary': $primary,
+  'primary-light': $primary-light,
+
+  'secondary-dark': $secondary-dark,
+  'secondary': $secondary,
+  'secondary-light': $secondary-light,
+
+  'brand-dark': $brand-dark,
+  'brand': $brand,
+  'brand-light': $brand-light,
+
+  'cta-dark': $cta-dark,
+  'cta': $cta,
+  'cta-light': $cta-light,
+
+  'info-dark': $info-dark,
+  'info': $info,
+  'info-light': $info-light,
+
+  'accent-dark': $accent-dark,
+  'accent': $accent,
+  'accent-light': $accent-light,
+
+  'background-light': $background-light,
+
+  'positive': $positive,
+  'positive-light': $positive-light,
+  'negative': $negative,
+  'negative-light': $negative-light,
+  'warning': $warning,
+
+  'border': $border,
+);
+
+/* auto-generate utilities */
+@each $name, $val in $ax-colors {
+  .text-#{$name} {
+    color: #{$val};
+  }
+  .bg-#{$name} {
+    background-color: #{$val};
+  }
+  .border-#{$name} {
+    border: 1px solid #{$val};
+  }
+}

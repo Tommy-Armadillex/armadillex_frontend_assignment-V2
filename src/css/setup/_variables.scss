@@ -1,0 +1,39 @@
+/* app global css */
+:root {
+  --main-shadow: 0 0 5px 0 #0000001a;
+  --btn-shadow: 0px 6px 12px 0px #0000000a;
+  --item-shadow: 0px 4px 5px 0px #1f242981;
+  --card-shadow: -10px 0 9.1px 0 rgba(0, 0, 0, 0.1);
+
+  --small-screen: 900px;
+  --medium-screen: 1216px;
+  --large-screen: 1536px;
+  --max-width-screen: 1600px;
+
+  --modal-width-sm: clamp(450px, 80vw, 600px);
+  --modal-width-md: clamp(550px, 80vw, 700px);
+  --modal-width-lg: clamp(750px, 80vw, 900px);
+  --modal-width-xl: clamp(900px, 80vw, 1200px);
+  --modal-max-height: calc(100vh - 150px);
+}
+
+// Change vars to fit css vars
+// SCSS Colors
+
+$background-light: $background-light;
+
+$main-shadow: var(--main-shadow);
+$btn-shadow: var(--btn-shadow);
+$item-shadow: var(--item-shadow);
+$card-shadow: var(--card-shadow);
+
+$small-screen: var(--small-screen);
+$medium-screen: var(--medium-screen);
+$large-screen: var(--large-screen);
+$max-width-screen: var(--max-width-screen);
+
+$modal-width-sm: var(--modal-width-sm);
+$modal-width-md: var(--modal-width-md);
+$modal-width-lg: var(--modal-width-lg);
+$modal-width-xl: var(--modal-width-xl);
+$modal-max-height: var(--modal-max-height);

@@ -1,0 +1,85 @@
+.clean-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  > li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.clean-input {
+  outline: none;
+  border: none;
+}
+
+.border-top {
+  border-top: 1px solid $border;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $border;
+}
+
+.light-bordered {
+  border: 1px solid $border;
+}
+
+.sm-radius {
+  border-radius: $input-border-radius;
+}
+
+.md-radius {
+  border-radius: $generic-border-radius;
+}
+
+.lg-radius {
+  border-radius: $card-border-radius;
+}
+
+.clean-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.events-none {
+  pointer-events: none;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.hide {
+  display: none !important;
+}
+
+.no-shadow {
+  box-shadow: none;
+}
+
+.btn-shadow {
+  box-shadow: $btn-shadow;
+}
+
+.main-shadow {
+  box-shadow: $main-shadow;
+}
+
+.item-shadow {
+  box-shadow: $item-shadow;
+}
+
+.round {
+  border-radius: 50%;
+}

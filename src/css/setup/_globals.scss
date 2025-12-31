@@ -1,0 +1,17 @@
+// Global CSS rules - loaded once globally via app.scss
+// This file contains CSS rules (typography, animations, base styles, etc.)
+// Variables, mixins, and functions are injected via additionalData in quasar.config.js
+
+@import 'src/css/setup/variables.scss';
+@import 'src/css/setup/functions.scss';
+@import 'src/css/setup/mixins.scss';
+@import 'src/css/setup/typography.scss';
+
+@import 'src/css/basics/animations.scss';
+@import 'src/css/basics/base.scss';
+@import 'src/css/basics/helpers.scss';
+@import 'src/css/basics/layout.scss';
+@import 'src/css/basics/colors.scss';
+
+@import 'src/css/components/table.scss';
+@import 'src/css/components/quasar-override.scss';

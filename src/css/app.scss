@@ -1,0 +1,4 @@
+// Main global stylesheet - loaded once globally
+// CSS rules are loaded here, variables/mixins/functions are injected via additionalData
+
+@import 'src/css/setup/_globals.scss';

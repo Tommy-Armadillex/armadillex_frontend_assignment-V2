@@ -1,0 +1,124 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+/* COLORS used by Quasar components + classes */
+$primary-dark: #333333;
+$primary: #383942;
+$primary-light: #d0d3db;
+
+$cta-dark: #d1a325;
+$cta: #f8c947;
+$cta-light: #fdf5df;
+
+$brand-dark: #0660aa;
+$brand: #3c75f1;
+$brand-light: #b2c7f5;
+
+$info-dark: #323232;
+$info: #5f687b;
+$info-light: #f1f1f1;
+
+$secondary-dark: #4d606d;
+$secondary: #7b97ac;
+$secondary-light: #abc3d6;
+
+$accent-dark: #757575;
+$accent: #f9fbff;
+$accent-light: #f4f7fe;
+
+$border: #e9f0ff;
+$background-light: #f4f7fe;
+
+$positive: #1fc16b;
+$positive-light: #c6f0d9;
+
+$negative: #e63d4b;
+$negative-light: #faeff0;
+
+$warning: #e63d4b;
+
+$space-base: 16px; /* base unit; keep or change */
+$space-xxs: (
+  x: 4px,
+  y: 4px,
+);
+$space-xs: (
+  x: 8px,
+  y: 8px,
+);
+$space-sm: (
+  x: 12px,
+  y: 12px,
+);
+$space-md: (
+  x: 16px,
+  y: 16px,
+);
+$space-lg: (
+  x: 20px,
+  y: 20px,
+);
+$space-xl: (
+  x: 24px,
+  y: 24px,
+);
+$space-xxl: (
+  x: 32px,
+  y: 32px,
+);
+$spaces: (
+  'none': (
+    x: 0,
+    y: 0,
+  ),
+  'xxs': $space-xxs,
+  'xs': $space-xs,
+  'sm': $space-sm,
+  'md': $space-md,
+  'lg': $space-lg,
+  'xl': $space-xl,
+  'xxl': $space-xxl,
+);
+
+$gutter-x-sm: 8px;
+$gutter-x-md: 12px;
+$gutter-x-lg: 16px;
+$gutter-x-xl: 20px;
+$gutter-x-xxl: 24px;
+
+/* RADII (global + buttons) */
+$generic-border-radius: 12px;
+$toolbar-border-radius: 12px;
+
+$button-border-radius: 12px;
+$button-padding: 10px 16px;
+$button-font-weight: 500;
+
+$input-border-radius: 8px;
+$input-border-color: $accent;
+
+$card-border-radius: 16px;
+$card-box-shadow: none;
+
+// /* TYPOGRAPHY */
+$typography-font-family:
+  'DM Sans',
+  system-ui,
+  -apple-system,
+  'Segoe UI',
+  Roboto,
+  Arial,
+  sans-serif;
+$body-font-size: 16px;
+$body-line-height: 1.3;
+
+$shadow-color: rgba(0, 0, 0, 0.2);
+$overlay-color: rgba(0, 0, 0, 0.3);
+
+$layout-padding: 20px;
+$body-padding: 16px;
+$header-height: 88px;
+$footer-height: 56px;
+$drawer-width: 260px;
