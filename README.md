@@ -100,7 +100,7 @@ Your review should touch on:
    - What patterns or decisions do you like? What is done correctly?
 
 2. **What could be improved**
-   - For each issue you encounter - What is it? Why does it matter? What would be a better approach for this?
+   - For each issue you encounter - What is it? Why does it matter? What would be a better approach for this? (If you prefer, you could attempt to fix issues in the code and submit the result - commenting what you changed)
    - You can mention UX observations that impact the code, but keep the focus on architecture/state/data flow.
 
 3. **Questions you have**

@@ -29,8 +29,6 @@ export function sortItems(items, sortBy, descending) {
     const bVal = b[sortBy] || ''
 
     // Handle date fields
-    // BUG: Sorting by day of month only - completely ignores year and month!
-    // Results in chaotic ordering where dates from different months get mixed
     if (sortBy.toLowerCase().includes('date')) {
       const aDay = aVal ? new Date(aVal).getDate() : 0
       const bDay = bVal ? new Date(bVal).getDate() : 0
